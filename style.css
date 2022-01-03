@@ -14,7 +14,7 @@ header {
   color: antiquewhite;
 }
 .pet-image {
-  width: 400px;
+  width: 200px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -33,11 +33,12 @@ button {
 }
 .meters {
   font-size: 2rem;
+  
 }
 .gauge {
   width: 100%;
   max-width: 250px;
-  font-size: 32px;
+  font-size: 35px;
 }
 .gaugeBody {
   width: 100%;
@@ -47,7 +48,7 @@ button {
   position: relative;
   border-top-left-radius: 100% 200%;
   border-top-right-radius: 100% 200%;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 .gaugeFill {
@@ -58,10 +59,10 @@ button {
   height: 100%;
   background-color: rgb(44, 255, 44);
   transform-origin: center top;
-  transform: rotate(0.25turn);
-  transition: transform 0.2 ease-out;
 }
+
 .gaugeCover {
+  z-index: 2;
   width: 75%;
   height: 150%;
   background: coral;
