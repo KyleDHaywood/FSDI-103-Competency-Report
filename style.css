@@ -1,21 +1,27 @@
 /* Universal */
+* {
+  margin: 0;
+}
 
 body {
   background-color: coral;
-  display: grid;
+  display: flexbox;
   justify-content: center;
   font-family: "Roboto Mono", monospace;
   color: rgb(7, 251, 3);
 }
 header {
-  margin: 5rem;
+  width: 100%;
   background-color: cadetblue;
   font-family: "Roboto Mono", monospace;
   color: antiquewhite;
+  text-align: center;
 }
+
 .pet-image {
-  width: 200px;
-  display: block;
+  min-width: 200px;
+  max-width: 400px;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
 }
@@ -24,21 +30,31 @@ header {
 
 .buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 button {
   background-color: darkcyan;
   color: antiquewhite;
   text-transform: uppercase;
 }
+
 .meters {
   font-size: 2rem;
-  
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: row;
 }
+
+.meters > div {
+  flex: 1;
+}
+
 .gauge {
   width: 100%;
   max-width: 250px;
   font-size: 35px;
+  justify-self: center;
 }
 .gaugeBody {
   width: 100%;
