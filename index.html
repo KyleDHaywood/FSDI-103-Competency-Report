@@ -14,16 +14,12 @@
 
   <body>
     <header>
-      <h1>Welcome to my Pokimanz pet game</h1>
+      <h1>Welcome to my Pokimanz train game</h1>
     </header>
 
     <main>
       <div class="main-body">
-        <img
-          class="pet-image"
-          src="https://external-preview.redd.it/AhQU4XSSxXhWRnQFxlZ6YDmME9stVT8mKnadAz_A9XM.png?auto=webp&s=a360b643b9956c1196a5a809fa699a927ad93cae"
-          alt=""
-        />
+        <img id="pet-image" src="./img/dog.png" />
       </div>
       <div class="meters">
         <div class="happiness">
@@ -61,12 +57,14 @@
       </div>
 
       <div class="buttons">
-        <div class="feedButton">
-          <button onclick="feed()">🍖 Feed</button>
+        <div>
+          <button id="trainButton" onclick="train()">👋 Train</button>
         </div>
-        <div class="petButton"><button onclick="pet()">👋 Pet</button></div>
-        <div class="playButton">
-          <button onclick="play()">⚽ Play</button>
+        <div>
+          <button id="feedButton" onclick="feed()">🍖 Feed</button>
+        </div>
+        <div>
+          <button id="playButton" onclick="play()">⚽ Play</button>
         </div>
       </div>
     </main>

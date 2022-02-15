@@ -18,9 +18,9 @@ header {
   text-align: center;
 }
 
-.pet-image {
-  min-width: 200px;
-  max-width: 400px;
+#pet-image {
+  width: 200px;
+  /* width: 400px; */
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -94,4 +94,9 @@ button {
   justify-content: center;
   padding-bottom: 25%;
   box-sizing: border-box;
+}
+@media (max-width: 400px) {
+  .gaugeCover p {
+    font-size: 50%;
+  }
 }
